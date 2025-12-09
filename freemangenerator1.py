@@ -248,6 +248,7 @@ Enter your Freeman type here. (1/2) """)
 
     if not freemantype:
         print(Fore.YELLOW + "No Freeman type specified. Defaulting to type 1.")
+        resetcolors()
         for i in tqdm(range(100), desc="Generating Freeman"):
             sleep(0.01)
 
